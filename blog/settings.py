@@ -38,6 +38,9 @@ INSTALLED_APPS = [
     'dj_rest_auth.registration',
     #corsheaders
     'corsheaders',
+
+    ## my apps
+    'posts',
 ]
 
 MIDDLEWARE = [
@@ -117,6 +120,10 @@ USE_TZ = True
 
 
 STATIC_URL = '/static/'
+STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
+STATIC_ROOT = os.path.join(BASE_DIR, "static_root")
+MEDIA_ROOT = os.path.join(BASE_DIR, "media_root")
+MEDIA_URL = '/media/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 

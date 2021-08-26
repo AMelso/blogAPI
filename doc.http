@@ -18,3 +18,9 @@ Content-Type: application/json
   "password1": "qwertytest12",
   "password2": "qwertytest12"
 }
+
+### test fetch posts
+GET  http://127.0.0.1:8000/posts/
+Content-Type: application/json
+
+
